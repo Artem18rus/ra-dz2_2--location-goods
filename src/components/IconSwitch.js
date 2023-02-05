@@ -1,13 +1,13 @@
 import React from "react";
 
-function IconSwitch(props) {
+function IconSwitch({ onSwitch, icon }) {
   return (
     <div className="icon">
       <div
-        onClick={(e) => props.onSwitch(e.target.innerText)}
+        onClick={(e) => onSwitch(e.target.innerText)}
         className="material-icons"
       >
-        {props.icon}
+        {icon}
       </div>
     </div>
   );
